@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OleDia Events</title>
-<meta name="description" content="OleDia Events"/>
-<meta property="og:type" content="website" />
-<link rel="preload" href="Pictures/bride_back_bw.jpg" as="image"/>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OleDia Events | Weddings & Event Planning in Charlotte, NC</title>
+  <meta name="description" content="OleDia Events — Charlotte-based wedding and event planning. Elegant, personalized, and stress-free celebrations across NC and SC." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="OleDia Events | Charlotte Wedding & Event Planning" />
+  <meta property="og:description" content="Bringing your vision to life with creativity and grace. Serving NC & SC." />
+  <meta property="og:image" content="https://olediaevents.com/Pictures/bride_back_bw.jpg" />
+  <link rel="icon" href="Pictures/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="Pictures/bride_back_bw.jpg" as="image" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -178,7 +183,6 @@
   </div>
 
 <!-- TESTIMONIALS -->
-
 <section id="comments" class="comments-section">
 <div class="container">
 <header class="section-head">
@@ -331,15 +335,12 @@ From “yes” to “I do,” we’ll help you stay on track every step of the w
 <!-- Scripts -->
 
 <script>
-  // Update footer year
   document.getElementById('year').textContent = new Date().getFullYear();
-
   // Header scroll behavior
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 50);
   });
-
   // Fade-in for lazy-loaded images
   document.querySelectorAll('img[loading="lazy"]').forEach(img => {
     if (img.complete) {
@@ -348,7 +349,6 @@ From “yes” to “I do,” we’ll help you stay on track every step of the w
       img.addEventListener('load', () => img.classList.add('loaded'));
     }
   });
-
   // Lightbox functionality
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -372,3 +372,4 @@ From “yes” to “I do,” we’ll help you stay on track every step of the w
   });
 </script>
 </body>
+</html>
