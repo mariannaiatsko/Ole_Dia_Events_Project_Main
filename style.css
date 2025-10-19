@@ -16,7 +16,7 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: 'Inter', system-ui, sans-serif;
-  background-image:url('Pictures/background2.png');
+  background-image:url('background2.png');
 }
 
 body {
@@ -353,7 +353,7 @@ h2 {
 
 /* Services */
 .services {
-  background-image: url('Pictures/background2.png'), cover;
+  background-image: url('background2.png'), cover;
 }
 
 .services-grid {
@@ -832,3 +832,4 @@ img[loading="lazy"].loaded {
                           padding: 20px; 
                         } 
                       }
+
