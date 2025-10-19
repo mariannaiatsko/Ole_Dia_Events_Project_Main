@@ -5,6 +5,7 @@
   --muted: #6b6b6b;
   --radius: 10px;
   --max: 1200px;
+  --gap: 2.5rem;
 }
 
 * { box-sizing: border-box; }
@@ -762,51 +763,72 @@ img[loading="lazy"].loaded {
   box-shadow: 0 0 8px black;
 }
 
-.h-divider .text {
-  width: 100px;
-  height: 45px;
-  padding: 10px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: -33px;
-  left: 50%;
-  margin-left: -60px;
-  border-radius: 100%;
-  box-shadow: 0 2px 4px #999;
-  background: white;
-}
 
-.h-divider .text i {
-  position: absolute;
-  top: 4px;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  border-radius: 100%;
-  border: 1px dashed #aaa;
-  text-align: center;
-  line-height: 50px;
-  font-style: normal;
-  color: #999;
-}
-
-.h-divider .text2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: -35px;
-  left: 50%;
-  margin-left: -25px;
-  border-radius: 100%;
-  box-shadow: 0 2px 4px #999;
-  background: white;
-}
-
-.h-divider img {
-  position: absolute;
-  margin: 4px;
-  max-width: 60px;
-  border-radius: 100%;
-  border: 1px dashed #aaa;
-}
+/* --- Responsive Navbar Fix --- */
+@media (max-width: 768px) { 
+  
+  .header-inner { 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+     padding: 0.8rem 1rem;
+     } 
+     .site-header { 
+      padding: 0.1rem 1rem;
+     } 
+     .logo-area { 
+      align-items: center; 
+      margin-bottom: 10px; 
+    } 
+    .logo img {
+       max-height: 55px;
+        width: auto; 
+      } 
+      .logo-text { 
+        display: block; 
+        font-size: 15px;
+         margin-top: 4px;
+         } 
+         .site-nav { 
+          flex-direction: column; 
+          align-items: center; 
+          width: 100%;
+           gap: 0; 
+        }
+         .site-nav a { 
+          display: block; 
+          width: 100%;
+           text-align: center; 
+           font-size: 16px;
+            padding: 6px 0; 
+          } 
+          .site-nav .btn {
+            display: inline-block;
+             font-size: 15px;
+              font-weight: 500;
+               padding: 12px 26px; 
+               border-radius: 555px; 
+               background: var(--accent);
+                color: #111;
+                 text-decoration: none; 
+                 text-align: center;
+                  border: none; 
+                  cursor: pointer; 
+                  transition: filter 0.3s;
+                   height: auto; width: auto; 
+                  } 
+                  .hero h1 { 
+                    font-size: clamp(1rem, 8vw, 3rem);
+                   } 
+                   .about-media img {
+                     margin-right: 0; 
+                     width: 100%;
+                      height: auto;
+                       max-width: 400px; 
+                      } 
+                      .form {
+                         width: 90%; 
+                         max-width: 400px;
+                          padding: 20px; 
+                        } 
+                      }
