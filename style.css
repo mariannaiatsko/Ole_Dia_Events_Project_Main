@@ -633,34 +633,40 @@ background:#c7b49e;
 	flex-direction:column;
 	margin-bottom:14px;
   font-family:"Cormorant Garamond", serif;
+  transition: all 0.3s ease;
+
 	}
 
 .label{
 	font-weight:600;
 }
 
-input, .textarea {
+input, textarea {
   font: inherit;
   padding: 14px 16px;
   border: 1px solid #ccc;
   border-radius: 20px;
   background: #fff;
   transition: border-color 0.3s ease;
-  width: 100%;               
-  box-sizing: border-box;     
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
 }
 
-.input:focus, .textarea:focus {
+input:focus, textarea:focus {
   border-color: #d9a7c7;
   outline: none;
 }
 
+::placeholder {
+  color: #999;
+  font-style: italic;
+}
 .privacy{
 	color:var(--muted); 
 	font-size:.9rem; 
 	margin-top:8px;
 }
-
 img[loading="lazy"] {
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
@@ -832,4 +838,5 @@ img[loading="lazy"].loaded {
                           padding: 20px; 
                         } 
                       }
+
 
